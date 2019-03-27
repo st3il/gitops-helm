@@ -14,7 +14,7 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    image: saschariedel/podinfo:dev-akn6qwzl
+    image: saschariedel/podinfo:dev-ireswcuk
     replicaCount: 1
     hpa:
       enabled: false
