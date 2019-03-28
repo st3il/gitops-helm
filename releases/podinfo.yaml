@@ -4,6 +4,8 @@ kind: HelmRelease
 metadata:
   name: podinfo-dev
   namespace: dummy
+  annotations:
+    flux.weave.works/automated: "false"
 spec:
   releaseName: podinfo-dev
   chart:
