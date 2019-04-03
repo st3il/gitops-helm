@@ -9,7 +9,7 @@ spec:
     #repository: https://charts.rissc.net
     #name: podinfo
     #version: 0.2.1
-    repository: https://charts.rissc.net
+    git: git@github.com:st3il/gitops-helm
     path: charts/podinfo
     ref: master
   values:
