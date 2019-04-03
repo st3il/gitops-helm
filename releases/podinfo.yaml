@@ -13,7 +13,7 @@ spec:
     #path: charts/podinfo
     #ref: master
   values:
-    image: saschariedel/podinfo:1.0.2
+    image: saschariedel/podinfo:1.0.3
     replicaCount: 1
     hpa:
       enabled: false
