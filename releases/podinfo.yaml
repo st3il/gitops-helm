@@ -1,19 +1,16 @@
----
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: podinfo-dev
-  namespace: dummy
-  annotations:
-    flux.weave.works/automated: "false"
+  namespace: default
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:st3il/gitops-helm
-    path: charts/podinfo
-    ref: master
+    repository: https://charts.rissc.net
+    name: podinfo
+    version: 0.2.1
   values:
-    image: saschariedel/podinfo:1.0.3
+    image: saschariedel/podinfo:1.0.2
     replicaCount: 1
     hpa:
       enabled: false
