@@ -6,9 +6,12 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
+    #repository: https://charts.rissc.net
+    #name: podinfo
+    #version: 0.2.1
     repository: https://charts.rissc.net
-    name: podinfo
-    version: 0.2.1
+    path: charts/podinfo
+    ref: master
   values:
     image: saschariedel/podinfo:1.0.2
     replicaCount: 1
